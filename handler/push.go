@@ -112,6 +112,11 @@ func Push(
 			level.Debug(logger).Log("msg", "pushed metrics must not have timestamps")
 			return
 		}
+		if !haveRandomNumber(metricFamilies) {
+			http.Error(w, "pushed metrics must have random_int", http.StatusBadRequest)
+			level.Debug(logger).Log("msg", "pushed metrics must have random_int")
+			return
+		}
 		now := time.Now()
 		addPushTimestamp(metricFamilies, now)
 		sanitizeLabels(metricFamilies, labels)
@@ -211,6 +216,20 @@ func splitLabels(labels string) (map[string]string, error) {
 		result[components[i]] = components[i+1]
 	}
 	return result, nil
+}
+
+// Check have random number
+func haveRandomNumber(metricFamilies map[string]*dto.MetricFamily) bool {
+	for _, mf := range metricFamilies {
+		for _, m := range mf.GetMetric() {
+			for _, label := range m.GetLabel() {
+				if label.GetName() == "random_int" {
+					return true
+				}
+			}
+		}
+	}
+	return false
 }
 
 // Checks if any timestamps have been specified.
