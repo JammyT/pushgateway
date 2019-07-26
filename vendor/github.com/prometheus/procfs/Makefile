@@ -25,5 +25,5 @@ update_fixtures:
 .PHONY: build
 build:
 
-.PHONY: test
-test: fixtures/.unpacked common-test
+# .PHONY: test
+# test: fixtures/.unpacked common-test

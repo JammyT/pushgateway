@@ -154,6 +154,11 @@ func MetricFamilyToText(out io.Writer, in *dto.MetricFamily) (written int, err e
 
 	// Finally the samples, one line for each.
 	for _, metric := range in.Metric {
+		metricTime := metric.GetTimestampMs()
+		nowTime = time.Now().Unix()
+		if metricTime == 0 || metricTime/1000 <= nowTime-30 {
+			continue;
+		}
 		switch metricType {
 		case dto.MetricType_COUNTER:
 			if metric.Counter == nil {
