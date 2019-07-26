@@ -40,7 +40,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/JammyT/prometheus/common/expfmt"
+	"github.com/JammyT/common/expfmt"
 
 	"github.com/prometheus/client_golang/prometheus"
 )

@@ -23,6 +23,7 @@ import (
 	"sync"
 	"time"
 
+	"github.com/JammyT/common/expfmt"
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
 	"github.com/golang/protobuf/proto"
@@ -30,7 +31,6 @@ import (
 	"github.com/matttproud/golang_protobuf_extensions/pbutil"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/JammyT/prometheus/common/expfmt"
 	"github.com/prometheus/common/model"
 
 	dto "github.com/prometheus/client_model/go"
