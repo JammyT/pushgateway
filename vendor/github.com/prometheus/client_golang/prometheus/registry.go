@@ -26,7 +26,7 @@ import (
 	"unicode/utf8"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/prometheus/common/expfmt"
+	"github.com/JammyT/prometheus/common/expfmt"
 
 	dto "github.com/prometheus/client_model/go"
 
