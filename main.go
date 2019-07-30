@@ -26,21 +26,22 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/JammyT/common/promlog"
+	"github.com/JammyT/common/version"
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
 	"github.com/julienschmidt/httprouter"
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/prometheus/common/promlog"
-	"github.com/prometheus/common/version"
+	"github.com/JammyT/client_golang/prometheus"
+	"github.com/JammyT/client_golang/prometheus/promhttp"
 	"gopkg.in/alecthomas/kingpin.v2"
 
-	dto "github.com/prometheus/client_model/go"
-	promlogflag "github.com/prometheus/common/promlog/flag"
+	promlogflag "github.com/JammyT/common/promlog/flag"
 
-	"github.com/prometheus/pushgateway/asset"
-	"github.com/prometheus/pushgateway/handler"
-	"github.com/prometheus/pushgateway/storage"
+	dto "github.com/prometheus/client_model/go"
+
+	"github.com/JammyT/pushgateway/asset"
+	"github.com/JammyT/pushgateway/handler"
+	"github.com/JammyT/pushgateway/storage"
 )
 
 func init() {

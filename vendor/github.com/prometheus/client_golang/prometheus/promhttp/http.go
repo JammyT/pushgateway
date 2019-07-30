@@ -42,7 +42,7 @@ import (
 
 	"github.com/JammyT/common/expfmt"
 
-	"github.com/prometheus/client_golang/prometheus"
+	"github.com/JammyT/client_golang/prometheus"
 )
 
 const (

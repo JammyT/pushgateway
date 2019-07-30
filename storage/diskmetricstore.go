@@ -22,11 +22,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/JammyT/common/model"
+
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
 	"github.com/golang/protobuf/proto"
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/common/model"
+	"github.com/JammyT/client_golang/prometheus"
 
 	dto "github.com/prometheus/client_model/go"
 )

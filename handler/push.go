@@ -24,18 +24,18 @@ import (
 	"time"
 
 	"github.com/JammyT/common/expfmt"
+	"github.com/JammyT/common/model"
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
 	"github.com/golang/protobuf/proto"
 	"github.com/julienschmidt/httprouter"
 	"github.com/matttproud/golang_protobuf_extensions/pbutil"
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/prometheus/common/model"
+	"github.com/JammyT/client_golang/prometheus"
+	"github.com/JammyT/client_golang/prometheus/promhttp"
 
 	dto "github.com/prometheus/client_model/go"
 
-	"github.com/prometheus/pushgateway/storage"
+	"github.com/JammyT/pushgateway/storage"
 )
 
 const (

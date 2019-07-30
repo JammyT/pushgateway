@@ -24,12 +24,12 @@ import (
 
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"github.com/JammyT/client_golang/prometheus"
+	"github.com/JammyT/client_golang/prometheus/promhttp"
 	"gopkg.in/alecthomas/kingpin.v2"
 
-	"github.com/prometheus/common/version"
-	"github.com/prometheus/pushgateway/storage"
+	"github.com/JammyT/common/version"
+	"github.com/JammyT/pushgateway/storage"
 )
 
 type data struct {

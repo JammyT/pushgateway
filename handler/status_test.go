@@ -20,8 +20,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/prometheus/pushgateway/asset"
-	"github.com/prometheus/pushgateway/storage"
+	"github.com/JammyT/pushgateway/asset"
+	"github.com/JammyT/pushgateway/storage"
 )
 
 func TestExternalURLPresenceInPage(t *testing.T) {

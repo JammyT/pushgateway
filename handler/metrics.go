@@ -14,8 +14,8 @@
 package handler
 
 import (
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/promauto"
+	"github.com/JammyT/client_golang/prometheus"
+	"github.com/JammyT/client_golang/prometheus/promauto"
 )
 
 var (

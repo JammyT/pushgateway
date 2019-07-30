@@ -283,7 +283,7 @@ The Pushgateway exposes the following metrics via the configured
 `--web.telemetry-path` (default: `/metrics`):
 - The pushed metrics.
 - For earch pushed group, a metric `push_time_seconds` as explained above.
-- The usual metrics provided by the [Prometheus Go client library](https://github.com/prometheus/client_golang), i.e.:
+- The usual metrics provided by the [Prometheus Go client library](https://github.com/JammyT/client_golang), i.e.:
   - `process_...`
   - `go_...`
   - `promhttp_metric_handler_requests_...`

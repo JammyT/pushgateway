@@ -26,7 +26,7 @@ import (
 	"github.com/matttproud/golang_protobuf_extensions/pbutil"
 	dto "github.com/prometheus/client_model/go"
 
-	"github.com/prometheus/pushgateway/storage"
+	"github.com/JammyT/pushgateway/storage"
 )
 
 var logger = log.NewNopLogger()

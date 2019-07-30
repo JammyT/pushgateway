@@ -1,13 +1,13 @@
-module github.com/prometheus/pushgateway
+module github.com/JammyT/pushgateway
 
 require (
+	github.com/JammyT/common v0.6.1-0.20190726111033-15b259b0fdeb
 	github.com/go-kit/kit v0.8.0
 	github.com/golang/protobuf v1.3.1
 	github.com/julienschmidt/httprouter v1.2.0
 	github.com/matttproud/golang_protobuf_extensions v1.0.1
-	github.com/prometheus/client_golang v1.0.0
+	github.com/JammyT/client_golang master
 	github.com/prometheus/client_model v0.0.0-20190129233127-fd36f4220a90
-	github.com/prometheus/common v0.4.1
 	github.com/shurcooL/httpfs v0.0.0-20181222201310-74dc9339e414 // indirect
 	github.com/shurcooL/vfsgen v0.0.0-20181202132449-6a9ea43bcacd
 	golang.org/x/sys v0.0.0-20190509141414-a5b02f93d862 // indirect

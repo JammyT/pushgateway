@@ -20,7 +20,7 @@ import (
 	"strings"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/prometheus/common/model"
+	"github.com/JammyT/common/model"
 
 	dto "github.com/prometheus/client_model/go"
 )

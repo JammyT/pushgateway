@@ -26,9 +26,9 @@
 //              "math/rand"
 //              "net/http"
 //
-//              "github.com/prometheus/client_golang/prometheus"
-//              "github.com/prometheus/client_golang/prometheus/promauto"
-//              "github.com/prometheus/client_golang/prometheus/promhttp"
+//              "github.com/JammyT/client_golang/prometheus"
+//              "github.com/JammyT/client_golang/prometheus/promauto"
+//              "github.com/JammyT/client_golang/prometheus/promhttp"
 //      )
 //
 //      var histogram = promauto.NewHistogram(prometheus.HistogramOpts{
@@ -57,9 +57,9 @@
 //      	"fmt"
 //      	"net/http"
 //
-//      	"github.com/prometheus/client_golang/prometheus"
-//      	"github.com/prometheus/client_golang/prometheus/promauto"
-//      	"github.com/prometheus/client_golang/prometheus/promhttp"
+//      	"github.com/JammyT/client_golang/prometheus"
+//      	"github.com/JammyT/client_golang/prometheus/promauto"
+//      	"github.com/JammyT/client_golang/prometheus/promhttp"
 //      )
 //
 //      func main() {
@@ -126,7 +126,7 @@
 // state in net/http has been criticized widely, and some avoid it altogether.
 package promauto
 
-import "github.com/prometheus/client_golang/prometheus"
+import "github.com/JammyT/client_golang/prometheus"
 
 // NewCounter works like the function of the same name in the prometheus package
 // but it automatically registers the Counter with the

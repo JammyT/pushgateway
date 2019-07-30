@@ -22,7 +22,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/prometheus/common/model"
+	"github.com/JammyT/common/model"
 
 	dto "github.com/prometheus/client_model/go"
 )
